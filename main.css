@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+  font-family: Courier;
+}
+
+.inputSection {
+  margin: 50px 0px 80px 0px;
+  width: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.inputs {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.addOption {
+  background-color: Plum;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid Violet
+}
+
+.pickOne {
+  background-color: Plum;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid Violet
+}
+
+.backgroundColor {
+  background-image:
+    linear-gradient(
+      to right,
+      orange,
+      yellow,
+      yellowgreen,
+      yellowgreen,
+      seagreen,
+      green,
+      darkgreen
+    );
+  }
