@@ -12,11 +12,23 @@
         <input placeholder="Hitt på nåt"></input>
       </div>
       <button class="addOption">Lägg till</button>
-      <button class="pickOne">Välj!</button>
     </div>
-
+    <div class="resultSection"></div>
+      <button class="pickOne">Välj!</button>
       <p style="text-align:center;">
         <img src="https://i.pinimg.com/474x/c4/1b/2b/c41b2b741cb86155435278611b4d10df--jane-austen-hamburgers.jpg"
        width="300" height="300" /></p>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+    $(function() {
+      $('.resultSection').hide()
+
+      var add_option = function() {
+        $('.inputs').append('<input></input>')
+      }
+
+      $('.addOption').click(add_option)
+    })
+    </script>
   </body>
 </html>
