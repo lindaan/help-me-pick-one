@@ -6,7 +6,7 @@
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body class="backgroundColor">
-    <h1>Vad ska vi äta till middag?</h1>
+    <h1 class="title">Vad ska vi äta till middag?</h1>
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Hitt på nåt"></input>
@@ -28,6 +28,19 @@
       }
 
       $('.addOption').click(add_option)
+
+      var options = []
+      var submit = function() {
+        $('.inputSection').hide()
+        $('.resultSection').css('display', 'flex')
+        $('input').each(function() {
+          options.push($(this).val())
+        })
+        var winner = options[Math.floor(Math.random() * options.length)]
+        console.log(winner)
+        $('.resultSection').text(winner)
+      }
+      $('.pickOne').click(submit)
     })
     </script>
   </body>
